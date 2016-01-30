@@ -11,34 +11,56 @@ article {
 	text-align: center;
 }
 
-h1 {
-	font-size: 5em;
+h1 {	
 	color: #ffffff;
+	font-size: 5em;
+	font-weight: bold;
+	letter-spacing: .05em;
+}
+
+h2 {
+	font-size: 2.5em;
+	color: #ffffff;
+	margin-bottom: 2em;
 }
 
 #blog-input {
-	border: solid .05em #999999;
+	border: solid .05em #9f835b;
+	color: #976e35;
 	font-family: 'Dosis', sans-serif;
 	font-size: 1.5em;
 	margin-bottom: 1em;
 	padding: .15em 0;
 	text-align: center;
-	width: 15em;
+	width: 25em;
 }
 
 #submit-button {
 	font-family: 'Dosis', sans-serif;
-	border: solid .1em #bbbbbb;
+	border: solid .1em #9f835b;
 	font-size: 1.15em;
-	color: #888888;
-	padding: .15em 1em;
+	color: #976e35;
+	padding: .3em 3em;
 	background-color: #ffffff;
 }
 
-ul {
+h3 {
+	font-family: 'Dosis', sans-serif;
 	font-size: 2em;
+	color: #ffffff;
+}
+
+ul {
+	color: #ffffff;
+	font-family: 'Dosis', sans-serif;
+	font-size: 1.5em;
 	list-style: none;
 	min-width: 300px;
 	margin-top: 2em;
-	padding: 0;
+}
+
+li {
+	background-color: rgba(179, 155, 122,.5);
+	margin: .5em;
+	padding: .5em;
 }
