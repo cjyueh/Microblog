@@ -1,5 +1,6 @@
 body {
-	background: url("background.png");
+	background: url("images/IMG_0891.jpg");
+	background-size: cover;
 	font-family: 'Homenaje', sans-serif;
 }
 
@@ -12,7 +13,7 @@ article {
 
 h1 {
 	font-size: 5em;
-	color: #555555;
+	color: #f1fafa;
 }
 
 #blog-input {
@@ -40,27 +41,4 @@ ul {
 	min-width: 300px;
 	margin-top: 2em;
 	padding: 0;
-}
-
-@media only screen and (max-width: 640px) {
-	h1 {
-		font-size: 3em;
-	}
-	#blog-input {
-		border-width: .07em;
-		font-size: 1.15em;
-		margin-bottom: 1em;
-		padding: .08em 0;
-		text-align: center;
-		width: 12em;
-	}
-	#submit-button {
-		border-width: .1em;
-		font-size: 1em;
-		padding: .08em .5em;
-	}
-	ul {
-		font-size: 1.5em;
-		margin-top: 2em;
-	}
 }

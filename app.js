@@ -1,47 +1,58 @@
-console.log("linked.");
-
-//USE THIS ONE :D 
-
-$(function() {
-
+$(document).ready(function() {
+	console.log("linked.");
 	clickSubmit();
-
 });
 
-//get form input
-//var newInput = $('#blog-input').val();
-//create/add input to list
-//var list = $("log").append("<li>" + newInput + "</li>");
-//when submit button is clicked, page is not refreshed and
-//into local storage
-//form is reset
+//get form input: var newPost = $('#blog-input').val();
+//create list of inputs: var postList = "<li>" + newPost + "</li>";
+//add input to list: $('#log').prepend(postList);
+//add input to localStorage (default is string): localStorage.postKey = newPost;
+//when submit button is clicked, instead of page refresh, send input to postlist & localStorage
 
 function clickSubmit() {
-	var postBlog = $('#submit-button');
-	postBlog.click(createList);
+	$('#submit-button').click(createList);
 }
 
-var postArray = [];
+//reset form input: this.form.reset();
+
 
 function createList(event) {
-	event.preventDefault();
-	var newInput = $('#blog-input').val();
-	
-	postArray.push(newInput);
-	console.log(postArray);
+	event.preventDefault(); //prevent default action of submit (= refresh page)
+	var newPost = $('#blog-input').val();
+	var postList = "<li>" + newPost + "</li>";
 
-	//$('#submit-button').click(function() {
-	//	localStorage.posts = newInput;
-		//console.log(newInput);
-
-	for (var i = 0; i < postArray.length; i++) {
-		var list = "<li>" + postArray[i] + "</li>";
-		localStorage.post = postArray[i];
-	}
-
-	$("#log").append(list);
-
+	$('#log').prepend(postList);
+	localStorage.postKey = newPost;
+	this.form.reset();
 }
+
+
+// function clickSubmit() {
+// 	var postBlog = $('#submit-button');
+// 	postBlog.click(createList);
+// }
+
+// var postArray = [];
+
+// function createList(event) {
+// 	event.preventDefault();
+// 	var newInput = $('#blog-input').val();
+	
+// 	postArray.push(newInput);
+// 	console.log(postArray);
+
+// 	//$('#submit-button').click(function() {
+// 	//	localStorage.posts = newInput;
+// 		//console.log(newInput);
+
+// 	for (var i = 0; i < postArray.length; i++) {
+// 		var list = "<li>" + postArray[i] + "</li>";
+// 		localStorage.post = postArray[i];
+// 	}
+
+// 	$("#log").append(list);
+
+// }
 
 
 /*window.onload = function() {
