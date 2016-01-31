@@ -4,8 +4,7 @@
 	<meta charset="UTF-8">
 
 	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
-	<link href='https://fonts.googleapis.com/css?family=Homenaje' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="style.css">
 
 	<script src="http://code.jquery.com/jquery.js"></script>
@@ -14,17 +13,20 @@
 	<title>toast posts</title>
 </head>
 <body>
-	<article>
-		<h1>blog log of toast posts</h1>
-		<h2>making toast, one post at a time</h2>
-		<form method="POST">
-			<label for="blog-input"></label>
-  			<input id="blog-input" type="text" name="input-key" placeholder="toast it" /><br>
-  			<input id="submit-button" type="submit" value="then, post it" />
-		</form>
-		<h3>toasts posted:  <span id="counter"></span></h3>
-		<ul id="log"></ul>
-	</article>
+	<div class="container">
+		<article>
+			<h1 class="text-center">blog log of toast posts</h1>
+			<h2 class="text-center">making toast, one post at a time</h2>
+			<form class="text-center" method="POST">
+				<div class="form-group">
+	  				<input type="text" class="form-control input-lg" id="blog-input" name="input-key" placeholder="toast it" /><br>
+	  				<button type="submit" class="btn btn-default input" id="submit-button">then, post it</button>
+	  			</div>
+			</form>
+		</article>
+		<h3 class="text-center">toasts posted:  <span id="counter"></span></h3>
+		<ul class="list-unstyled" id="log"></ul>
+	</div>
 	<script type="text/javascript" src="app.js"></script>
 </body>
 </html>

@@ -17,7 +17,7 @@ var blogPost = []; //creates array of blogPost with newPost
 var postCount = 0;
 
 function clickSubmit() {
-	$('#submit-button').on('click', function(event) {
+	$('button').on('click', function(event) {
 		//prevent default action of submit (= refresh page)
 		event.preventDefault();
 		addPostToArray();

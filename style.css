@@ -1,62 +1,51 @@
 body {
-	background: url("images/IMG_0891.jpg");
+	background: url("images/IMG_0891.jpg") no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
 	background-size: cover;
-	font-family: 'Homenaje', sans-serif;
+	font-family: 'Vollkorn', serif;
+	color: #ffffff;
+}
+
+.container {
+	max-width: 900px;
+	margin: 8em auto;
 }
 
 article {
-	max-width: 960px;
-	margin: 7em auto;
-	position: relative;
-	text-align: center;
+	padding: 5em;
+	border: solid .2em #ffffff;
 }
 
 h1 {	
-	color: #ffffff;
-	font-size: 5em;
+	font-size: 4.5em;
 	font-weight: bold;
 	letter-spacing: .05em;
 }
 
 h2 {
 	font-size: 2.5em;
-	color: #ffffff;
-	margin-bottom: 2em;
+	margin-bottom: 1em;
 }
 
 #blog-input {
-	border: solid .05em #9f835b;
+	border: solid .1em #9f835b;
+	border-radius: 0;
 	color: #976e35;
-	font-family: 'Dosis', sans-serif;
-	font-size: 1.5em;
 	margin-bottom: 1em;
-	padding: .15em 0;
 	text-align: center;
-	width: 25em;
 }
 
 #submit-button {
-	font-family: 'Dosis', sans-serif;
-	border: solid .1em #9f835b;
-	font-size: 1.15em;
-	color: #976e35;
-	padding: .3em 3em;
-	background-color: #ffffff;
-}
-
-h3 {
-	font-family: 'Dosis', sans-serif;
-	font-size: 2em;
-	color: #ffffff;
+	border: solid .05em #9f835b;
+	border-radius: 0;
+	color: #87533b;
 }
 
 ul {
-	color: #ffffff;
-	font-family: 'Dosis', sans-serif;
 	font-size: 1.5em;
-	list-style: none;
-	min-width: 300px;
-	margin-top: 2em;
+	margin-top: 2.5em;
 }
 
 li {
